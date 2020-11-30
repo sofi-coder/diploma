@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pathway+Gothic+One&display=swap'); 
+:root {
+    --main-color: black;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+h1, p, h2 {
+      margin: o;
+      padding: 0;
+      font-family: "Goudy Bookletter 1911", sans-serif;
+}
+header nav h1 {
+
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+header nav .top-menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none
+}
+header nav .top-menu a {
+     text-decoration: none;
+     text-transform: uppercase;
+     color: var(--main-color);
+     border: 1px solid transparent;
+     padding: 5px;
+     font-family: "Goudy Bookletter 1911", sans-serif;
+ }
+ header nav .top-menu a:hover {
+      border: 1px solid var(--main-color);
+}
+ @media (min-width: 550px) {
+     header nav {
+         display: flex;
+         
+     }
+     header nav .top-menu{
+        flex: 1;
+
+    }
+    }
+    header div {
+       background-image: url(../img/girl.jpg);
+       background-position: center;
+       background-size: cover;
+   min-height: 500px;
+ }
+header nav h2 {
+
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+      img {
+       background-image: url(../img/facebook.jpeg);
+       background-position: left;
+       background-size: cover;
+   min-height: 20px;
+ }
+ main .product-list .social-media img {
+   display: block;
+   width: 100%;
+ }
+ img {
+       background-image: url(../img/instagram.jpeg);
+       background-position: left;
+       background-size: cover;
+   min-height: 20px;
+ }
+ 
+ * {
+     background-color: pink;
+
+
+ }
+
+.social{
+    margin: 30px;
+
+}
+.face{
+    float: left;
+    margin: 10px;
+}
+.inst{
+    float: left;
+    margin: 10px;
+}
+ 
+
+.rounded {
+    counter-reset: li; 
+    list-style: none; 
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    .rounded a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: pink;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;
+    }
+    .rounded a:hover {background: #E9E4E0;}
+    .rounded a:hover:before {transform: rotate(360deg);}
+    .rounded a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: pink;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    }
+
+   .map{
+    width: 600px;
+    height: 450px;
+       margin: 150px;
+       border: dashed deeppink;
+   }
+   .hr{
+       color: deeppink;
+   }
